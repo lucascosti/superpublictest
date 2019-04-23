@@ -10,6 +10,6 @@ action "Issue closed filter" {
 
 action "Notify author" {
   needs = ["Issue closed filter"]
-  uses = "lucascosti/superpublictest/notify-issue-author.action@master"
+  uses = "github-developer/notify-issue-author.action@master"
   secrets = ["GITHUB_TOKEN"]
 }
